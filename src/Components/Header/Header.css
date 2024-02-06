@@ -1,0 +1,121 @@
+.header {
+  /* margin: 16px 0px; */
+  padding: 16px 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #003366;
+  overflow: hidden;
+}
+
+.header-container {
+  font-size: 15px;
+  position: fixed;
+  margin: 0 auto;
+  width: 88%;
+  padding: 9px 30px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 3px gray;
+  align-items: center;
+  border-radius: 60px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+}
+
+.header-container ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-container ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s;
+}
+
+.header-container ul li a:hover {
+  color: #003366;
+  /* color: rgb(134, 134, 134); */
+}
+
+.menu-icon {
+  display: none;
+}
+
+#header-btn {
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  padding: 13px;
+  background: linear-gradient(
+    140deg,
+    rgba(253, 187, 45, 1) 0%,
+    rgba(0, 51, 102, 1) 100%
+  );
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#header-btn:hover {
+  transform: scale(1.02);
+}
+
+/* .header-card{
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: left;
+    margin-top: 150px;
+    margin-bottom: 150px;
+} */
+
+@media screen and (max-width: 728px) {
+  /* .header-container nav{
+        display: none;
+    } */
+
+  #navbar {
+    color: whitesmoke;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    border-radius: 30px;
+    top: 90px;
+    right: -400px;
+    width: 300px;
+    height: 30vh;
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgb(117, 117, 117);
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-left: 25px;
+    margin-bottom: 35px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
